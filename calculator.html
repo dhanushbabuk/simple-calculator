@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <form action="" name="form1">
+          <input type="text" name="output" id="answerbox" />
+          <br />
+          <input type="button" value="1" onclick="form1.output.value+='1'" />
+          <input type="button" value="2" onclick="form1.output.value+='2'" />
+          <input type="button" value="3" onclick="form1.output.value+='3'" />
+          <input type="button" value="+" onclick="form1.output.value+='+'" />
+          <br />
+          <input type="button" value="4" onclick="form1.output.value+='4'" />
+          <input type="button" value="5" onclick="form1.output.value+='5'" />
+          <input type="button" value="6" onclick="form1.output.value+='6'" />
+          <input type="button" value="-" onclick="form1.output.value+='-'" />
+          <br />
+          <input type="button" value="7" onclick="form1.output.value+='7'" />
+          <input type="button" value="8" onclick="form1.output.value+='8'" />
+          <input type="button" value="9" onclick="form1.output.value+='9'" />
+          <input type="button" value="*" onclick="form1.output.value+='*'" />
+          <br />
+          <input type="button" value="0" onclick="form1.output.value+='0'" />
+          <input type="button" value="/" onclick="form1.output.value+='/'" />
+          <input type="button" value="." onclick="form1.output.value+='.'" />
+          <input
+            type="button"
+            value="del"
+            onclick="form1.output.value=form1.output.value.slice(0,-1)"
+          />
+          <br />
+          <input
+            type="button"
+            value="clr"
+            class="clr"
+            onclick="form1.output.value='  ' "
+          />
+          <input type="button" value="=" class="clr" onclick="calculate()" />
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function calculate() {
+      try {
+        form1.output.value = eval(form1.output.value);
+      } catch (err) {
+        alert("invalid");
+      }
+    }
+  </script>
+</html>

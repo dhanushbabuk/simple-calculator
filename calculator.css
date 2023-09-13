@@ -1,0 +1,40 @@
+.container {
+  max-width: 256px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 5%;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+input {
+  width: 50px;
+  height: 50px;
+  font-size: larger;
+  margin: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(199, 198, 198);
+  border: none;
+  border-radius: 45%;
+}
+#answerbox {
+  width: 245px;
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 18px;
+  background-color: lightgray;
+  padding: 10px;
+}
+form .clr {
+  width: 110px;
+  border-radius: 20px;
+}
+form {
+  width: 300px;
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 8px;
+    margin-top: 50px;
+  }
+}
